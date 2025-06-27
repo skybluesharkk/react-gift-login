@@ -1,11 +1,12 @@
 import theme from "@/styles/theme"
 import styled from "@emotion/styled"
 
-const Layout = styled.div`
+const PresentLayout = styled.div`
+  display: flex;
+  width: 720px;
   max-width: 720px;
-  margin: 0 auto;
+  flex-wrap: wrap;
   background-color: ${theme.colors.gray00};
-  height: 100vh;
 `
 
-export default Layout
+export default PresentLayout
