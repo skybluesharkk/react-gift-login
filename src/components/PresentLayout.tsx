@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 
 const PresentLayout = styled.div`
   display: flex;
-  width: 720px;
+  width: 100%;
   max-width: 720px;
   flex-wrap: wrap;
   background-color: ${theme.colors.gray00};

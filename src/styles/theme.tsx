@@ -121,6 +121,8 @@ const theme = {
     spacing15: "60px",
     spacing16: "64px",
     spacing18: "18px",
+    spacing106: "106px",
+    spacing02: "2px",
   },
 }
 

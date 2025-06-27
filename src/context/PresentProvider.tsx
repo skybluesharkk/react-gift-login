@@ -1,5 +1,5 @@
 import { PresentContext } from "@/context/PresentContext"
-import MOCK_DATA from "../mock"
+import MOCK_PRESENT from "@/mock_present"
 
 interface Props {
   children: React.ReactNode
@@ -7,7 +7,7 @@ interface Props {
 
 const PresentProvider = ({ children }: Props) => {
   return (
-    <PresentContext.Provider value={MOCK_DATA}>
+    <PresentContext.Provider value={MOCK_PRESENT}>
       {children}
     </PresentContext.Provider>
   )

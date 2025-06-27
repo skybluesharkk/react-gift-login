@@ -8,8 +8,13 @@ const NaviBar = styled.div`
   flex-direction: row;
   font-width: ${theme.Typography.title1Regular};
   align-items: center;
-  padding: 2px;
-  justify-content: ${theme.space.spacing1};
+
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  max-width: 720px;
+  width: 100%;
 `
 
 export default NaviBar

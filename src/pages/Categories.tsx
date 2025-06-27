@@ -6,10 +6,12 @@ import Text from "@/components/Text"
 import plusicon from "@/assets/Plus_icon.png"
 import PresentCardStyle from "@/components/PresentCardStyle"
 import { useContext } from "react"
-import { PresentContext } from "@/context/PresentContext"
+import { PresentThemeContext } from "@/context/PresentThemeContext"
 import Layout from "@/components/Layout"
 import Blank from "@/components/Blank"
 import Column from "@/components/Column"
+import Trending from "./Trending"
+
 interface PresentItem {
   themeId: number
   name: string
@@ -31,7 +33,7 @@ const PresentCard = ({ present }: PresentCardProps) => {
 }
 
 const PresentList = () => {
-  const presents = useContext(PresentContext)
+  const presents = useContext(PresentThemeContext)
   return (
     <PresentLayout>
       {presents.map(function (Present) {
@@ -51,7 +53,12 @@ const Categories = () => {
           margin="spacing0"
           border="spacing18"
         >
-          <PlusButton src={plusicon}></PlusButton>
+          <PlusButton
+            src={plusicon}
+            backGroundColor="kakaoYellow"
+            borderRadius="spacing4"
+            padding="spacing2"
+          ></PlusButton>
           <Text
             variant="subtitle1Bold"
             margin="spacing2"
@@ -64,7 +71,7 @@ const Categories = () => {
       </PresentWhoBackGround>
 
       <Layout>
-        <Blank />
+        <Blank height="24px" />
         <Text variant="title1Bold" margin="spacing2" padding="spacing2">
           선물 테마
         </Text>
@@ -81,6 +88,7 @@ const Categories = () => {
               <Text
                 variant="label2Regular"
                 margin="spacing4"
+                marginLeft="spacing0"
                 padding="spacing0"
                 marginBottom="spacing0"
               >
@@ -96,6 +104,8 @@ const Categories = () => {
               </Text>
             </Column>
           </PresentWho>
+          <Blank height="24px" />
+          <Trending />
         </Layout>
       </Layout>
     </Layout>

@@ -1,8 +1,18 @@
 import { createContext } from "react"
 
 interface Present {
-  themeId: number
+  id: number
   name: string
-  image: string
+  imageURL: string
+  price: {
+    basicPrice: number
+    discountRate: number
+    sellingPrice: number
+  }
+  brandInfo: {
+    id: number
+    name: string
+    imageURL: string
+  }
 }
 export const PresentContext = createContext<Present[]>([])

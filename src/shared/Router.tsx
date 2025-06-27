@@ -2,11 +2,13 @@ import Home from "@/Home"
 import Login from "@/pages/Login"
 import Categories from "@/pages/Categories"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import PresentProvider from "@/context/PresentProvider"
+import PresentProvider from "@/context/PresentThemeProvider"
+import PresentThemeProvider from "@/context/PresentThemeProvider"
 
 const Router = () => {
   return (
     <BrowserRouter>
+    <PresentThemeProvider>
       <PresentProvider>
         <Routes>
           <Route path="/" element={<Home />}>
@@ -15,6 +17,7 @@ const Router = () => {
           </Route>
         </Routes>
       </PresentProvider>
+      </PresentThemeProvider>
     </BrowserRouter>
   )
 }

@@ -29,7 +29,7 @@ const Home = () => {
             <Button src={person} onClick={() => navigate(`/Login`)} />
           </Box>
         </NaviBar>
-        <main>
+        <main style={{ paddingTop: "44px" }}>
           <Outlet />
         </main>
       </Layout>
