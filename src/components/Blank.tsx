@@ -4,7 +4,7 @@ interface BlankStyle {
 }
 const Blank = styled.div<BlankStyle>`
   width: 100%;
-  max-width: 702px;
+  max-width: 720px;
   height: ${(props) => props.height};
 `
 export default Blank

@@ -20,7 +20,7 @@ const ButtonsRow = () => {
         <Column key={tab.id}>
           <TabButton
             type="button"
-            active={activeId === tab.id}
+            isActive={activeId === tab.id}
             onClick={() => setActiveId(tab.id)}
           >
             <Text
