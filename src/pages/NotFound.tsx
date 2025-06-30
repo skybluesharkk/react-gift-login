@@ -3,7 +3,7 @@ import LoginForm from "@/components/LoginForm"
 const NotFound = () => {
   return (
     <LoginForm>
-      <div>Not Found!</div>
+      <div>Sorry, Its Not Found Error!</div>
     </LoginForm>
   )
 }
