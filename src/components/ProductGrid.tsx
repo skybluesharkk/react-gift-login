@@ -9,10 +9,6 @@ import MoreButton from "./MoreButton"
 import theme from "@/styles/theme"
 
 const VISIBLE_COUNT = 6
-interface ThemeToken {
-  color: keyof typeof theme.colors
-  space: keyof typeof theme.space
-}
 
 const generateMockProducts = () => {
   return Array.from({ length: 21 }, (_, i) => ({

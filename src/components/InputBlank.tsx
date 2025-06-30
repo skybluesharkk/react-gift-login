@@ -1,10 +1,7 @@
 import styled from "@emotion/styled"
+import type { ComponentStyle } from "@/interfaces/ComponentStyle"
 
-interface InputBlankStyle {
-  width: string
-  height: string
-}
-const InputBlank = styled.input<InputBlankStyle>`
+const InputBlank = styled.input<ComponentStyle>`
   width: ${({ width }) => width};
   height: ${({ height }) => height};
   border: none;
